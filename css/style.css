@@ -89,6 +89,40 @@ a {
     padding: 0 0 0 16px;
 }
 
+.breadcrumbs {
+    background-color: #F1E4E6;
+    padding: 59px 0 60px 0;
+    margin-bottom: 51px;
+}
+
+.breadcrumbs__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.breadcrumbs__title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #F16D7F;
+}
+
+.breadcrumbs__list a {
+    color: #636363;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.breadcrumbs__current {
+    font-weight: 700;
+    color: #F16D7F
+}
+
+.breadcrumbs__list a:not(:last-child)::after {
+    content: '/';
+    padding: 0 5px;
+}
+
 .brand {
     display: block;
     font-size: 48px;
@@ -195,6 +229,58 @@ a {
     width: 100%;
 }
 
+.filter__sorting {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.filter__title {
+    display: flex;
+    align-items: center;
+}
+
+.filter a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.filter a::after {
+    content: '\f036';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 11px;
+    line-height: 100%;
+    padding-left: 11px;
+}
+
+.sorting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sorting__item {
+    color: #6e6e6e;
+    display: flex;
+    align-items: center;
+}
+
+.sorting a:not(:last-child) {
+    margin-right: 28px;
+}
+
+.sorting a::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 10px;
+    line-height: 100%;
+    padding-left: 10px;
+}
+
 .cards {
     display: flex;
     justify-content: space-between;
@@ -291,6 +377,41 @@ a {
     color: #fff;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95.5px;
+}
+
+.pagination__box {
+    padding: 12px 15px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 300;
+    outline: 1px solid #EBEBEB;
+}
+
+.pagination__any {
+    color: #cacaca;
+}
+
+.pagination__prev,
+.pagination__next {
+    color: #000;
+}
+
+.pagination__prev {
+    padding-right: 16px;
+}
+
+.pagination__next {
+    padding-left: 16px;
+}
+
+.pagination__current {
+    color: #F26376;
+}
+
 .features {
     background: #222224;
     color: #FBFBFB;
@@ -324,6 +445,10 @@ a {
 .features__title {
     font-size: 20px;
     font-weight: 400;
+}
+
+input {
+    outline: none;
 }
 
 .subscribe {

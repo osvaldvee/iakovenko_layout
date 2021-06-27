@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Index</title>
+    <title>Shop Catalog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
@@ -27,37 +27,33 @@
             </div>
         </div>
     </header>
+    <section class="breadcrumbs">
+        <div class="container breadcrumbs__wrap">
+            <div class="breadcrumbs__left">
+                <div class="breadcrumbs__title">NEW ARRIVALS</div>
+            </div>
+            <div class="breadcrumbs__right">
+                <div class="breadcrumbs__list">
+                    <a href="/index.html"><span>HOME</span></a>
+                    <a href="#"><span>MEN</span></a>
+                    <a href="#"><span class="breadcrumbs__current">NEW ARRIVALS</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
     <main>
-        <section class="banner">
-            <div class="container banner__wrap">
-                <h1 class="banner__title"><span class="brand">THE BRAND</span>OF LUXERIOUS <span
-                        class="pink">FASHION</span></h1>
-            </div>
-        </section>
-        <section class="offers">
-            <div class="container offers__wrap">
-                <a href="/catalog.html" class="offer offers__woman">
-                    <div class="offers__text">30% OFF <span class="pink">FOR WOMEN</span></div>
-                </a>
-                <a href="/catalog.html" class="offer offers__man">
-                    <div class="offers__text">HOT DEAL <span class="pink">FOR MEN</span></div>
-                </a>
-                <a href="/catalog.html" class="offer offers__kids">
-                    <div class="offers__text">NEW ARRIVALS <span class="pink">FOR KIDS</span></div>
-                </a>
-                <a href="/catalog.html" class="offer offers__acc">
-                    <div class="offers__text">LUXIROUS & TRENDY <span class="pink">ACCESORIES</span></div>
-                </a>
-            </div>
-        </section>
         <section class="featured">
             <div class="container featured__wrap">
-                <h2 class="featured__title">Featured Items
-                    <span>Shop for items based on what we featured in this week</span>
-                </h2>
-                <div class="cards">
-
-                    <div class="card">
+                <div class="filter__sorting">
+                    <div class="filter"><a href="#" class="filter__title">FILTER</a></div>
+                    <div class="sorting">
+                        <a href="#" class="sorting__item">TRENDING NOW</a>
+                        <a href="#" class="sorting__item">SIZE</a>
+                        <a href="#" class="sorting__item">PRICE</a>
+                    </div>
+                </div>
+                <section class="cards">
+                    <article class="card">
                         <div class="card__img">
                             <img src="../img/product1.jpg" alt="card1">
                             <div class="card__addbox">
@@ -74,10 +70,10 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <div class="card__img">
-                            <img src="../img/product2.jpg" alt="card2">
+                            <img src="../img/product7.jpg" alt="card7">
                             <div class="card__addbox">
                                 <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
                                         alt="addbox__img">Add
@@ -92,8 +88,8 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <div class="card__img">
                             <img src="../img/product3.jpg" alt="card3">
                             <div class="card__addbox">
@@ -110,8 +106,8 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <div class="card__img">
                             <img src="../img/product4.jpg" alt="card4">
                             <div class="card__addbox">
@@ -128,10 +124,10 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <div class="card__img">
-                            <img src="../img/product5.jpg" alt="card5">
+                            <img src="../img/product8.jpg" alt="card8">
                             <div class="card__addbox">
                                 <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
                                         alt="addbox__img">Add
@@ -146,10 +142,10 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
-                    <div class="card">
+                    </article>
+                    <article class="card">
                         <div class="card__img">
-                            <img src="../img/product6.jpg" alt="card6">
+                            <img src="../img/product9.jpg" alt="card9">
                             <div class="card__addbox">
                                 <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
                                         alt="addbox__img">Add
@@ -164,12 +160,74 @@
                                 arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                             <strong>$52.00</strong>
                         </div>
-                    </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__img">
+                            <img src="../img/product10.jpg" alt="card10">
+                            <div class="card__addbox">
+                                <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
+                                        alt="addbox__img">Add
+                                    to cart</a>
+                            </div>
+                        </div>
+                        <div class="card__text">
+                            <a href="#">
+                                <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <strong>$52.00</strong>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__img">
+                            <img src="../img/product11.jpg" alt="card11">
+                            <div class="card__addbox">
+                                <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
+                                        alt="addbox__img">Add
+                                    to cart</a>
+                            </div>
+                        </div>
+                        <div class="card__text">
+                            <a href="#">
+                                <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <strong>$52.00</strong>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <div class="card__img">
+                            <img src="../img/product12.jpg" alt="card12">
+                            <div class="card__addbox">
+                                <a class="addbox" href="#"><img class="addbox__img" src="../img/add_cart.png"
+                                        alt="addbox__img">Add
+                                    to cart</a>
+                            </div>
+                        </div>
+                        <div class="card__text">
+                            <a href="#">
+                                <h3 class="card__title">ELLERY X M'O CAPSULE</h3>
+                            </a>
+                            <p>Known for her sculptural takes on traditional tailoring, Australian
+                                arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                            <strong>$52.00</strong>
+                        </div>
+                    </article>
 
-                </div>
-                <div class="container browse">
-                    <a class="browse__btn" href="/catalog.html">Browse All Product</a>
-                </div>
+                </section>
+
+                <section class="container pagination">
+                    <div class="pagination__box">
+                        <a href="#" class="pagination__prev"><i class="fas fa-chevron-left"></i></a>
+                        <a href="#" class="pagination__any pagination__current">1</a>
+                        <a href="#" class="pagination__any">2</a>
+                        <a href="#" class="pagination__any">3</a>
+                        <a href="#" class="pagination__next"><i class="fas fa-chevron-right"></i></a>
+                    </div>
+                </section>
+
             </div>
         </section>
         <section class="features">
@@ -181,7 +239,6 @@
                         models.
                     </p>
                 </div>
-
                 <div class="features__item">
                     <img src="../img/sales.png" alt="sales">
                     <span class="features__title">Sales & discounts</span>
@@ -189,7 +246,6 @@
                         models.
                     </p>
                 </div>
-
                 <div class="features__item">
                     <img src="../img/quality.png" alt="quality">
                     <span class="features__title">Quality assurance</span>

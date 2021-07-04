@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@import "../css/var";
+@import "../css/header";
+@import "../css/footer";
+@import "../css/index";
+@import "../css/cards";
+@import "../css/product";
+@import "../css/features";
+@import "../css/catalog";
+@import "../css/cart";
+
+a {
+    text-decoration: none;
+}
+
+.breadcrumbs {
+    background-color: #F1E4E6;
+    padding: 59px 0 60px 0;
+    margin-bottom: 51px;
+
+    &__product {
+        margin-bottom: 0;
+    }
+
+    &__wrap {
+        @include flex(space-between, center);
+    }
+
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        color: #F16D7F;
+    }
+
+    &__list {
+        & a {
+            color: #636363;
+            font-size: 14px;
+            font-weight: 300;
+
+            &:not(:last-child)::after {
+                content: '/';
+                padding: 0 5px;
+            }
+        }
+    }
+
+    &__current {
+        font-weight: 700;
+        color: #F16D7F
+    }
+}
+
+.pink {
+    color: #F16D7F;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}

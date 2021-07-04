@@ -1,0 +1,106 @@
+.banner {
+    background-color: #F1E4E6;
+    height: 764px;
+
+    &__wrap {
+        @include flex(flex-end, center);
+        height: 100%;
+        background-image: url(../img/banner.png);
+        background-repeat: no-repeat;
+        background-position: -227px bottom;
+    }
+
+    &__title {
+        max-width: 405px;
+        border-left: 12px solid #F16D7F;
+        font-size: 32px;
+        font-weight: 700;
+        padding: 0 0 0 16px;
+    }
+}
+
+.brand {
+    display: block;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.offers {
+    margin: 65px 0 96px 0;
+
+    &__wrap {
+        @include flex(space-between, center);
+        flex-wrap: wrap;
+    }
+
+    & .offer {
+        @include flex;
+        color: #fff;
+        width: 360px;
+        height: 260px;
+
+        &:last-child {
+            width: 100%;
+            margin-top: 30px;
+            height: 180px;
+        }
+
+        & .pink {
+            display: flex;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &__text {
+        @include flex;
+        flex-wrap: wrap;
+        font-size: 16px;
+        font-weight: 400;
+        max-width: 160px;
+    }
+
+    &__woman {
+        background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/for_women.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
+
+    &__man {
+        background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/for_men.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
+
+    &__kids {
+        background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/for_kids.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
+
+    &__acc {
+        background-image: linear-gradient(rgba(33, 22, 22, 0.7), rgba(33, 22, 22, 0.7)), url(../img/accessories.jpg);
+        background-repeat: no-repeat;
+        background-blend-mode: multiply;
+    }
+}
+
+.browse {
+    @include flex;
+    margin-bottom: 95px;
+
+    &__btn {
+        padding: 15px 49px;
+        background-color: #fff;
+        font-size: 16px;
+        line-height: 16px;
+        font-weight: 400;
+        color: #F26376;
+        outline: 1px solid #F26376;
+
+        &:hover {
+            background-color: #F26376;
+            color: #fff;
+        }
+    }
+}

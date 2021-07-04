@@ -1,0 +1,45 @@
+.header {
+    background-color: #222;
+    color: #fff;
+    padding: 18px 0 19px 0;
+
+    &__left,
+    &__right {
+        @include flex(flex-start, center);
+    }
+
+    &__wrap {
+        @include flex(space-between, flex-start);
+    }
+
+    &__logo {
+        margin-right: 41px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 33px;
+        }
+    }
+
+    &__cart {
+        background-image: url(../img/cart.svg);
+        width: 32px;
+        height: 29px;
+        position: relative;
+    }
+}
+
+.count {
+    @include flex;
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    width: 19px;
+    height: 19px;
+    background: #F16D7F;
+    border-radius: 50%;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+}

@@ -1032,7 +1032,11 @@ body {
   z-index: 2;
 }
 
-.sorting__item .drop__title {
+.sorting__item:hover .drop__item {
+  display: block;
+}
+
+.drop__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1044,7 +1048,7 @@ body {
           align-items: center;
 }
 
-.sorting__item .drop__title::after {
+.drop__title::after {
   content: '\f078';
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -1053,7 +1057,7 @@ body {
   padding-left: 10px;
 }
 
-.sorting__item .drop__item {
+.drop__item {
   background-color: #fff;
   display: none;
   position: absolute;
@@ -1069,11 +1073,7 @@ body {
   margin-top: 5px;
 }
 
-.sorting__item .drop__item:hover .drop__item {
-  display: block;
-}
-
-.sorting__item .drop__item label {
+.drop__item label {
   margin-left: 9px;
   color: #6e6e6e;
   font-family: 'Lato';
@@ -1081,7 +1081,7 @@ body {
   font-weight: 400;
 }
 
-.sorting__item .drop__item li:not(:last-of-type) {
+.drop__item li:not(:last-of-type) {
   margin-bottom: 9px;
 }
 

@@ -738,10 +738,6 @@ button {
     min-width: 90px;
     outline: none;
     border: none;
-}
-
-.model__form select,
-.model__form input {
     font-size: 14px;
     font-weight: 400;
     font-family: Lato;
@@ -758,6 +754,7 @@ button {
     appearance: none;
 }
 
+/*
 .selected__title::before {
     content: '\f078';
     font-family: "Font Awesome 5 Free";
@@ -765,6 +762,7 @@ button {
     font-size: 10px;
     padding-left: 10px;
 }
+*/
 
 .cartbtn__flex {
     display: flex;

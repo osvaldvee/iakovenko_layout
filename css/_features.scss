@@ -1,0 +1,30 @@
+.features {
+    background: #222224;
+    color: #FBFBFB;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 103px 0 104px 0;
+
+    &__wrap {
+        @include flex(space-between, center);
+    }
+
+    &__item {
+        @include flex(space-between, center);
+        flex-direction: column;
+        min-height: 134px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+
+        & p {
+            text-align: center;
+        }
+
+        & .features__title {
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+}

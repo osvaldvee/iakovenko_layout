@@ -1,0 +1,84 @@
+.cards {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    margin-bottom: calc(48.5px - 30px)
+}
+
+.card {
+    background: #F8F8F8;
+    width: 360px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    min-height: 420px;
+    position: relative;
+
+    &:hover {
+        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover .card__addbox {
+        opacity: 1;
+    }
+
+    &__img {
+        @include flex;
+        height: 420px;
+        width: 360px;
+        right: 0;
+    }
+
+    &__addbox {
+        @include flex;
+        opacity: 0;
+        height: 420px;
+        width: 360px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(58, 56, 56, 0.86);
+    }
+
+    &__text {
+        padding: 25px 18px 20px 18px;
+
+        & p {
+            font-size: 14px;
+            font-weight: 300;
+            color: #5D5D5D;
+            padding: 13px 0 18px 0;
+        }
+
+        & strong {
+            color: #F16D7F;
+        }
+
+        & .card__title {
+            font-size: 13px;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: #000;
+        }
+    }
+}
+
+.addbox {
+    @include flex;
+    border: 1px solid #ffffff;
+    padding: 8px 12px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    background: transparent;
+
+    &:hover {
+        background: #F16D7F;
+        border: 1px solid #F16D7F;
+    }
+
+    &__img {
+        width: 23px;
+        height: 22px;
+        margin-right: 7px;
+    }
+}

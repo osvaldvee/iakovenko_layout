@@ -23,7 +23,7 @@
             <div class="header__right">
                 <a class="header__item" href="#"><img src="img/menu.svg" alt="menu"></a>
                 <a class="header__item" href="#"><img src="img/person.svg" alt="person"></a>
-                <a class="header__item header__cart" href="#"><span class="count">5</span></a>
+                <a class="header__item header__cart" href="/cart.html"><span class="count">5</span></a>
             </div>
         </div>
     </header>
@@ -45,11 +45,107 @@
         <section class="featured">
             <div class="container featured__wrap">
                 <div class="filter__sorting">
-                    <div class="filter"><a href="#" class="filter__title">FILTER</a></div>
+                    <div class="filter">
+                        <details class="filter__box">
+                            <summary class="filter__main">FILTER</summary>
+                            <div class="filter__content">
+                                <details class="filter__sub">
+                                    <summary>CATEGORY</summary>
+                                    <ul>
+                                        <li><a href="#">Accessories</a></li>
+                                        <li><a href="#">Bags</a></li>
+                                        <li><a href="#">Denim</a></li>
+                                        <li><a href="#">Hoodies & Sweatshirts</a></li>
+                                        <li><a href="#">Jackets & Coats</a></li>
+                                        <li><a href="#">Polos</a></li>
+                                        <li><a href="#">Shirts</a></li>
+                                        <li><a href="#">Shoes</a></li>
+                                        <li><a href="#">Sweaters & Knits</a></li>
+                                        <li><a href="#">T-Shirts</a></li>
+                                        <li><a href="#">Tanks</a></li>
+                                    </ul>
+                                </details>
+                                <details class="filter__sub">
+                                    <summary>BRAND</summary>
+                                    <ul>
+                                        <li><a href="#">Brand 1</a></li>
+                                        <li><a href="#">Brand 2</a></li>
+                                        <li><a href="#">Brand 3</a></li>
+                                    </ul>
+                                </details>
+                                <details class="filter__sub">
+                                    <summary>DESIGNER</summary>
+                                    <ul>
+                                        <li><a href="#">Designer 1</a></li>
+                                        <li><a href="#">Designer 2</a></li>
+                                        <li><a href="#">Designer 3</a></li>
+                                    </ul>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
                     <div class="sorting">
-                        <a href="#" class="sorting__item">TRENDING NOW</a>
-                        <a href="#" class="sorting__item">SIZE</a>
-                        <a href="#" class="sorting__item">PRICE</a>
+
+                        <div class="sorting__group sorting__item">
+                            <div class="drop__title">TRENDING NOW</div>
+                            <div class="drop__item">
+                                <ul>
+                                    <li><input type="checkbox" id="trending1" name="trending1">
+                                        <label for="trending1">Trending 1</label>
+                                    </li>
+                                    <li><input type="checkbox" id="trending2" name="trending2">
+                                        <label for="trending2">Trending 2</label>
+                                    </li>
+                                    <li><input type="checkbox" id="trending3" name="trending3">
+                                        <label for="trending3">Trending 3</label>
+                                    </li>
+                                    <li><input type="checkbox" id="trending4" name="trending4">
+                                        <label for="trending4">Trending 4</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="sorting__group sorting__item">
+                            <div class="drop__title">SIZE</div>
+                            <div class="drop__item">
+                                <div class="drop__item--box">
+                                    <ul>
+                                        <li><input type="checkbox" id="size_xs" name="size_xs">
+                                            <label for="size_xs">XS</label>
+                                        </li>
+                                        <li><input type="checkbox" id="size_s" name="size_s">
+                                            <label for="size_s">S</label>
+                                        </li>
+                                        <li><input type="checkbox" id="size_m" name="size_m">
+                                            <label for="size_m">M</label>
+                                        </li>
+                                        <li><input type="checkbox" id="size_l" name="size_l">
+                                            <label for="size_l">L</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sorting__group sorting__item">
+                            <div class="drop__title">PRICE</div>
+                            <div class="drop__item">
+                                <div>
+                                    <ul>
+                                        <li><input type="checkbox" id="price1" name="price1">
+                                            <label for="price1">Price 1</label>
+                                        </li>
+                                        <li><input type="checkbox" id="price2" name="price2">
+                                            <label for="price2">Price 2</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
                 <section class="cards">
@@ -218,7 +314,7 @@
 
                 </section>
 
-                <section class="container pagination">
+                <section class="pagination">
                     <div class="pagination__box">
                         <a href="#" class="pagination__prev"><i class="fas fa-chevron-left"></i></a>
                         <a href="#" class="pagination__any pagination__current">1</a>
@@ -233,21 +329,21 @@
         <section class="features">
             <div class="container features__wrap">
                 <div class="features__item">
-                    <img src="../img/delivery.png" alt="delivery">
+                    <img src="../img/delivery.svg" alt="delivery">
                     <span class="features__title">Free Delivery</span>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.
                     </p>
                 </div>
                 <div class="features__item">
-                    <img src="../img/sales.png" alt="sales">
+                    <img src="../img/sales.svg" alt="sales">
                     <span class="features__title">Sales & discounts</span>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.
                     </p>
                 </div>
                 <div class="features__item">
-                    <img src="../img/quality.png" alt="quality">
+                    <img src="../img/quality.svg" alt="quality">
                     <span class="features__title">Quality assurance</span>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
                         models.

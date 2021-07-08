@@ -1,3 +1,5 @@
+@import "../css/var";
+
 * {
     margin: 0;
     padding: 0;
@@ -6,27 +8,26 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    width: 100%;
 }
 
 .container {
-    max-width: 1140px;
-    width: 100%;
+    width: 1140px;
     margin: 0 auto;
 }
 
-@import "../css/var";
-@import "../css/header";
-@import "../css/footer";
-@import "../css/index";
-@import "../css/cards";
-@import "../css/product";
-@import "../css/features";
-@import "../css/catalog";
-@import "../css/cart";
-@import "../css/regist";
+::selection {
+    background-color: #F16D7F;
+    color: #fff;
+}
 
 a {
     text-decoration: none;
+    transition: 0.3s;
+}
+
+button {
+    transition: 0.3s;
 }
 
 .breadcrumbs {
@@ -82,3 +83,14 @@ button {
 ul {
     list-style-type: none;
 }
+
+@import "../css/header";
+@import "../css/footer";
+@import "../css/index";
+@import "../css/cards";
+@import "../css/product";
+@import "../css/features";
+@import "../css/catalog";
+@import "../css/cart";
+@import "../css/regist";
+@import "../css/responsive";

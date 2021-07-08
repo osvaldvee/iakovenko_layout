@@ -48,6 +48,13 @@ body {
 
 .header__logo {
   margin-right: 41px;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+.header__logo:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .header__item:not(:last-child) {
@@ -1440,6 +1447,197 @@ body {
   color: #000;
   padding: 16px 38px;
   border: 1px solid #A4A4A4;
+}
+
+.reg-page {
+  margin: 64px auto 96px auto;
+}
+
+.reg-page__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.reg-page__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 128px;
+}
+
+.reg-page__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.reg-page__reg-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reg-page__reg-form h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.reg-page__reg-form_name input {
+  width: 360px;
+  padding: 12px 17px;
+  border: 1px solid #a4a4a4;
+  border-radius: 0;
+  color: #B1B1B1;
+  font-family: 'Lato';
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.reg-page__reg-form_name input:last-child {
+  margin-bottom: 31px;
+}
+
+.reg-page__reg-form_gender {
+  margin-bottom: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reg-page__reg-form_gender label {
+  margin: 0 20px 0 10px;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  color: #000;
+}
+
+.reg-page__reg-form_login input {
+  width: 360px;
+  padding: 12px 17px;
+  border: 1px solid #a4a4a4;
+  border-radius: 0;
+  color: #B1B1B1;
+  font-family: 'Lato';
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 21px;
+}
+
+.reg-page__reg-form_login input:last-child {
+  margin-bottom: 31px;
+}
+
+.reg-page__reg-form_login p {
+  font-size: 13px;
+  font-weight: 300;
+  color: #B1B1B1;
+}
+
+.reg-page__reg-form_join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  margin-top: 39px;
+}
+
+.reg-page__reg-form_join-btn {
+  background-color: #F16D7F;
+  color: #fff;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 300;
+  border: none;
+  padding: 16px 29px;
+  -webkit-transition: all 0.8s ease-out;
+  transition: all 0.8s ease-out;
+}
+
+.reg-page__reg-form_join-btn:hover {
+  -webkit-transform: scale(1.5) translateX(30px);
+          transform: scale(1.5) translateX(30px);
+}
+
+.reg-page__reg-form_join-btn img {
+  margin-left: 20px;
+}
+
+.reg-page__text {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+
+.reg-page__text p {
+  margin-bottom: 22px;
+}
+
+.reg-page__text li {
+  margin-bottom: 16px;
+}
+
+.reg-page__text li::before {
+  content: ' ';
+  display: inline-block;
+  background-image: url("../img/reg-check.svg");
+  height: 16px;
+  width: 20px;
+  margin-right: 22px;
 }
 
 a {

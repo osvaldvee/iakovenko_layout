@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/52e5fad425.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrap">
+            <div class="header__left">
+                <a class="header__logo" href="/index.html"><img src="img/logo.png" alt="logo"></a>
+                <a class="header__search" href="#"><img src="img/search.svg" alt="search"></a>
+            </div>
+            <div class="header__right">
+                <a class="header__item" href="#"><img src="img/menu.svg" alt="menu"></a>
+                <a class="header__item" href="#"><img src="img/person.svg" alt="person"></a>
+                <a class="header__item header__cart" href="/cart.html"><span class="count">5</span></a>
+            </div>
+        </div>
+    </header>
+    <section class="breadcrumbs breadcrumbs__product">
+        <div class="container breadcrumbs__wrap">
+            <div class="breadcrumbs__left">
+                <div class="breadcrumbs__title">REGISTRATION</div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+
+        <section class="reg-page">
+            <div class="container reg-page__wrap">
+                <div class="reg-page__left">
+
+                    <form action="#">
+                        <article class="reg-page__reg-form">
+                            <h3>Your Name</h3>
+                            <div class="reg-page__reg-form_name">
+                                <input type="text" id="f-name" placeholder="First Name" required>
+                                <input type="text" id="l-name" placeholder="Last Name" required>
+                            </div>
+                            <div class="reg-page__reg-form_gender">
+                                <input type="checkbox" id="gender-m">
+                                <label for="gender-m">Male</label>
+                                <input type="checkbox" id="gender-f">
+                                <label for="gender-f">Female</label>
+                            </div>
+                            <h3>Login Details</h3>
+                            <div class="reg-page__reg-form_login">
+                                <input type="" id="email" placeholder="E-mail" required>
+                                <input type="text" id="password" placeholder="Password" required>
+                                <p>Please use 8 or more characters, with at least 1 number and a mixture of uppercase
+                                    and lowercase letters</p>
+                            </div>
+                            <div class="reg-page__reg-form_join"><button class="reg-page__reg-form_join-btn"
+                                    type="submit">JOIN NOW
+                                    <img src="/img/join-arrow.svg" alt="join-arrow"></button></div>
+
+                        </article>
+                    </form>
+
+
+
+                </div>
+                <div class="reg-page__right">
+                    <div class="reg-page__text">
+                        <p>LOYALTY HAS ITS PERKS</p>
+                        <p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting
+                            with these as soon as you join:</p>
+                        <ul>
+                            <li>15% off welcome offer</li>
+                            <li>Free shipping, returns and exchanges on all orders</li>
+                            <li>$10 off a purchase on your birthday</li>
+                            <li>Early access to products</li>
+                            <li>Exclusive offers & rewards</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="subscribe">
+            <div class="container subscribe__wrap">
+                <div class="subscribe__left">
+                    <img src="../img/subscriber.png" alt="subscriber">
+                    <p>Vestibulum quis porttitor dui! Quisque viverra nunc mi, <i>a pulvinar purus condimentum</i></p>
+                </div>
+                <div class="subscribe__right">
+                    <h4 class="subscribe__title">SUBSCRIBE
+                        <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                    </h4>
+                    <form action="#">
+                        <div class="subscribe__form">
+                            <input type="email" placeholder="Enter Your Email" aria-label="email">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container footer__wrap">
+                <div class="footer__left">© 2021 Brand All Rights Reserved.</div>
+                <div class="footer__right">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

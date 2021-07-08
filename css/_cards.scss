@@ -12,14 +12,6 @@
     min-height: 420px;
     position: relative;
 
-    &:hover {
-        box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
-    }
-
-    &:hover .card__addbox {
-        opacity: 1;
-    }
-
     &__img {
         @include flex;
         height: 420px;
@@ -37,6 +29,11 @@
         left: 0;
         right: 0;
         background: rgba(58, 56, 56, 0.86);
+        transition: 0.5s;
+    }
+
+    &:hover .card__addbox {
+        opacity: 1;
     }
 
     &__text {

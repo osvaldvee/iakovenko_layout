@@ -1,0 +1,113 @@
+/* mobile */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 768px;
+    }
+
+    .header__wrap {
+        padding: 0 32px 0 32px;
+        margin: 0;
+        width: 100%;
+    }
+
+    .banner {
+        height: 367px;
+    }
+
+    .banner__wrap {
+        background-position: 0 bottom;
+        background-size: contain;
+    }
+
+    .banner__title {
+        font-size: 24px;
+        margin-right: 33px;
+    }
+
+    .brand {
+        font-size: 37px;
+    }
+
+    .offers {
+        margin: 19px auto 154px auto;
+
+        &__wrap {
+            padding: 0 16px;
+        }
+    }
+
+    .offers .offer {
+        width: 230px;
+        height: 166px;
+        background-size: cover;
+    }
+
+    .offers .offer:last-child {
+        width: 100%;
+        height: 116px;
+    }
+
+    .featured__title {
+        margin-bottom: 72px;
+    }
+
+    .cards {
+        padding: 0 16px;
+        margin-bottom: calc(32px - 17px);
+    }
+
+    .card {
+        margin-bottom: 17px;
+    }
+
+    .browse {
+        margin-bottom: 65px;
+    }
+
+    .features {
+        padding: 48px 0 64px 0;
+
+        &__wrap {
+            @include flex;
+            flex-direction: column;
+            width: 360px;
+        }
+
+        &__item:not(:last-child) {
+            margin-right: 0;
+            margin-bottom: 48px;
+        }
+    }
+
+    .subscribe {
+        width: 100%;
+        height: calc(693px - 79px);
+        background-position: -370px bottom;
+        background-size: cover;
+
+        &__wrap {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__left {
+            margin: 64px 0 75px 0;
+
+            & p {
+                font-size: 20px;
+            }
+        }
+
+        &__title {
+            margin-bottom: 27px;
+        }
+    }
+
+    .footer {
+        &__wrap {
+            padding: 0 32px;
+        }
+    }
+}

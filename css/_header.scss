@@ -9,16 +9,11 @@
     }
 
     &__wrap {
-        @include flex(space-between, flex-start);
+        @include flex(space-between, center);
     }
 
     &__logo {
         margin-right: 41px;
-        transition: all 0.7s ease-out;
-
-        &:hover {
-            transform: rotate(180deg);
-        }
     }
 
     &__item {
@@ -47,4 +42,100 @@
     font-size: 12px;
     font-weight: 400;
     color: #fff;
+}
+
+/* burger */
+
+.header {
+    &__nav {
+        position: absolute;
+        top: 78px;
+        right: 0;
+        z-index: 10;
+    }
+
+    &__drop {
+        display: flex;
+        justify-content: flex-end;
+
+        & label {
+            cursor: pointer;
+        }
+    }
+}
+
+.nav {
+    width: 232px;
+    background-color: #fff;
+    height: calc(100vh - 75px);
+    padding: 34px 37px;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 24px;
+    }
+
+    &__heading {
+        font-size: 14px;
+        font-weight: 400;
+        color: #F16D7F;
+        margin-bottom: 12px;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__list {
+        & li {
+            font-size: 14px;
+            font-weight: 400;
+            color: #6F6E6E;
+            padding-left: 21px;
+            transition: 0.5s;
+
+            &:hover {
+                padding-left: 0px;
+
+                & a {
+                    color: #F16D7F;
+                }
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 11px;
+            }
+
+            & a {
+                color: #6F6E6E;
+            }
+        }
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__close {
+        position: absolute;
+        right: calc(-37px + 16px);
+        top: calc(-34px + 16px);
+    }
+}
+
+#burger {
+    display: none;
+
+    &:not(:checked)~.header__nav {
+        display: none;
+    }
+
+    &:checked~.header__nav {
+        display: block;
+    }
 }

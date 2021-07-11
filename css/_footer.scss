@@ -1,8 +1,9 @@
 .subscribe {
     background-image: url(../img/subscribe_bg.jpg);
     height: 448px;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
+    padding: 0 16px;
 
     &__wrap {
         @include flex(space-between, center);

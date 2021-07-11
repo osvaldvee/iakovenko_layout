@@ -11,6 +11,7 @@
     overflow: hidden;
     min-height: 420px;
     position: relative;
+    transition: 0.3s;
 
     &__img {
         @include flex;
@@ -29,7 +30,12 @@
         left: 0;
         right: 0;
         background: rgba(58, 56, 56, 0.86);
-        transition: 0.5s;
+        box-shadow: 0;
+        transition: 0.3s;
+    }
+
+    &:hover {
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
     }
 
     &:hover .card__addbox {
